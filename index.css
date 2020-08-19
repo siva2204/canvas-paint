@@ -21,7 +21,6 @@ body {
   margin-right: auto;
   display: block;
   background-color: white;
-  cursor: crosshair;
 }
 
 #canvas:hover {

@@ -17,7 +17,7 @@ var eventellipse = false;
 var eventerase = false;
 
 function brush() {
-  canvas.style.cursor = "url('.img/brush.png')";
+  canvas.style.cursor = "url('.img/brush.png'),crosshair";
   brush = true;
   eventrectangle = false;
   eventcircle = false;
@@ -26,7 +26,7 @@ function brush() {
 }
 
 function rectangle() {
-  canvas.style.cursor = "url('.img/rectangle.png')";
+  canvas.style.cursor = "url('.img/rectangle.png'),crosshair";
   if (eventrectangle == true) {
     eventrectangle = false;
   } else {
@@ -39,7 +39,7 @@ function rectangle() {
 }
 
 function circle() {
-  canvas.style.cursor = "url('.img/circle.png')";
+  canvas.style.cursor = "url('.img/circle.png'),crosshair";
   if (eventcircle == true) {
     eventcircle = false;
   } else {
@@ -52,7 +52,7 @@ function circle() {
 }
 
 function ellipses() {
-  canvas.style.cursor = "url('.img/oval.png')";
+  canvas.style.cursor = "url('.img/oval.png'),crosshair";
   if (eventellipse == true) {
     eventellipse = false;
   } else {
@@ -64,7 +64,7 @@ function ellipses() {
   }
 }
 const erase = () => {
-  canvas.style.cursor = "url('.img/eraser.png')";
+  canvas.style.cursor = "url('.img/eraser.png'),crosshair";
   if (eventerase == true) {
     eventerase = false;
   } else {
@@ -255,4 +255,4 @@ const clearcanvas = () => {
 
 savecanvasimage();
 
-canvas.style.cursor = "url('./img/brush.png')";
+canvas.style.cursor = "url('./img/brush.png'),crosshair";
